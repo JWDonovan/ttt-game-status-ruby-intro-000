@@ -40,3 +40,7 @@ def full?(board)
 
   board_full
 end
+
+def draw?(board)
+  
+end
