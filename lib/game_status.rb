@@ -24,7 +24,7 @@ def empty?(board) {
 }
 
 def won?(board)
-  if board_empty(board) || draw?(board)
+  if empty?(board) || draw?(board)
     return false
   end
 
