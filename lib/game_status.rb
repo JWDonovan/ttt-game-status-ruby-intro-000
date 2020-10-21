@@ -24,6 +24,10 @@ def empty?(board) {
 }
 
 def won?(board)
+  if board_empty(board) || draw?(board)
+    return nil
+  end
+  
   WIN_COMBINATIONS.each do |win_combination|
     win_index_1 = win_combination[0]
     win_index_2 = win_combination[1]
