@@ -15,13 +15,13 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
-def empty?(board) {
+def empty?(board)
   board_empty = board.all? do |index|
     index = '' || index == ' '
   end
 
   board_empty
-}
+end
 
 def won?(board)
   if empty?(board) || draw?(board)
