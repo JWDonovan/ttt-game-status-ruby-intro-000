@@ -52,3 +52,9 @@ end
 def over?(board)
   won?(board) || full?(board) || draw?(board)
 end
+
+def winner?(board)
+  if won?
+    won?[0]
+  end
+end
