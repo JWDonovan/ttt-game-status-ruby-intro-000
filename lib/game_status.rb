@@ -54,11 +54,5 @@ def over?(board)
 end
 
 def winner?(board)
-  won = won?(board)
-
-  if !won
-    return nil
-  end
-
-  won
+  nil
 end
