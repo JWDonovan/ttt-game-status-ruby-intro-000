@@ -25,7 +25,7 @@ def empty?(board) {
 
 def won?(board)
   if board_empty(board) || draw?(board)
-    return nil
+    return false
   end
 
   WIN_COMBINATIONS.each do |win_combination|
