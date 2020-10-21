@@ -15,6 +15,14 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
+def empty?(board) {
+  board_empty = board.all? do |index|
+    index = '' || index == ' '
+  end
+
+  board_empty
+}
+
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
     win_index_1 = win_combination[0]
@@ -27,7 +35,7 @@ def won?(board)
 
     if (position_1 == "X" && position_2 == "X" && position_3 == "X") || (position_1 == "O" && position_2 == "O" && position_3 == "O")
       return win_combination
-    elsif draw?(board)
+    elsif draw?(board) ||
       return nil
     else
       nil
