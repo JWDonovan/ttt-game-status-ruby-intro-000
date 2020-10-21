@@ -58,5 +58,5 @@ def winner?(board)
     return won?(board)[0]
   end
 
-  false
+  nil
 end
